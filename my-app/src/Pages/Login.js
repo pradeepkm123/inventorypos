@@ -242,7 +242,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Fav from '../assets/img/fav.png';
 
 const defaultTheme = createTheme();
-const API = 'http://52.66.98.128:5002/api';
+const API = process.env.REACT_APP_API_URL || 'http://52.66.98.128:5002/api';
 
 function Login() {
   const { login } = useUser();
