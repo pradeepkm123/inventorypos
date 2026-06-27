@@ -422,9 +422,9 @@ import {
 } from '@mui/material';
 import axios from 'axios';
 
-const BRANDS_API = 'https://stockhandle-taxr.onrender.com/api/brands';
-const CATEGORIES_API = 'https://stockhandle-taxr.onrender.com/api/categories';
-const SUBCATEGORIES_API = 'https://stockhandle-taxr.onrender.com/api/subcategories';
+const BRANDS_API = 'http://52.66.98.128:5002/api/brands';
+const CATEGORIES_API = 'http://52.66.98.128:5002/api/categories';
+const SUBCATEGORIES_API = 'http://52.66.98.128:5002/api/subcategories';
 
 const AddProduct = ({
   open,
@@ -478,7 +478,7 @@ const AddProduct = ({
       }
       // fallback without helper: keep it as-is or prefix uploads
       if (/^https?:\/\//i.test(img) || img.startsWith('/uploads/')) return img;
-      return `https://stockhandle.onrender.com/uploads/${img}`;
+      return `http://52.66.98.128:5002/uploads/${img}`;
     }
 
     // 3) Otherwise fallback

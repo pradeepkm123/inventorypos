@@ -332,7 +332,7 @@ import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { useSnackbar } from 'notistack';
 
-const API_BASE = 'https://stockhandle-taxr.onrender.com/api';
+const API_BASE = 'http://52.66.98.128:5002/api';
 
 const Brand = () => {
   const { enqueueSnackbar } = useSnackbar();
