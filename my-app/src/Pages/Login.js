@@ -271,8 +271,7 @@ function Login() {
           setRoles([]);
           return;
         }
-        const list = Array.isArray(data.roles) ? data.roles : [];
-        setRoles(list);
+        setRoles(data.roles || []);
       } catch (e) {
         toast.error('Unable to load roles. Check server.');
         setRoles([]);
