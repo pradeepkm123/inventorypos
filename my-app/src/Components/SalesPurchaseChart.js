@@ -17,8 +17,8 @@ const SalesPurchaseChart = () => {
     const fetchData = async () => {
       try {
         const [inwardRes, outwardRes] = await Promise.all([
-          fetch('http://52.66.98.128:5002/api/inventory'),
-          fetch('http://52.66.98.128:5002/api/dispatch'),
+          fetch('https://inventoryapi.cctvshoppee.com/api/inventory'),
+          fetch('https://inventoryapi.cctvshoppee.com/api/dispatch'),
         ]);
 
         const inwardData = await inwardRes.json();

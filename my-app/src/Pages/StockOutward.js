@@ -1830,8 +1830,8 @@ import { Add as AddIcon, Delete as DeleteIcon } from '@mui/icons-material';
 import axios from 'axios';
 import { useSnackbar } from 'notistack';
 
-const API_BASE = 'http://52.66.98.128:5002/api';
-const FILE_HOST = 'http://52.66.98.128:5002';
+const API_BASE = 'https://inventoryapi.cctvshoppee.com/api';
+const FILE_HOST = 'https://inventoryapi.cctvshoppee.com';
 
 // Helper: Image URL
 const getImageUrl = (img) => {

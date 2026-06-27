@@ -74,7 +74,7 @@ const Warehouses = () => {
 
   const fetchWarehouses = async () => {
     try {
-      const response = await axios.get('http://52.66.98.128:5002/api/warehouses');
+      const response = await axios.get('https://inventoryapi.cctvshoppee.com/api/warehouses');
       setWarehouses(response.data);
     } catch (error) {
       console.error('Error fetching warehouses:', error);
@@ -202,10 +202,10 @@ const Warehouses = () => {
     if (validate()) {
       try {
         if (editIndex !== null) {
-          await axios.patch(`http://52.66.98.128:5002/api/warehouses/${warehouses[editIndex]._id}`, formData);
+          await axios.patch(`https://inventoryapi.cctvshoppee.com/api/warehouses/${warehouses[editIndex]._id}`, formData);
           enqueueSnackbar('Warehouse updated successfully!', { variant: 'success' });
         } else {
-          await axios.post('http://52.66.98.128:5002/api/warehouses', formData);
+          await axios.post('https://inventoryapi.cctvshoppee.com/api/warehouses', formData);
           enqueueSnackbar('Warehouse added successfully!', { variant: 'success' });
         }
         fetchWarehouses();
@@ -246,7 +246,7 @@ const Warehouses = () => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://52.66.98.128:5002/api/warehouses/${warehouses[deleteIndex]._id}`);
+      await axios.delete(`https://inventoryapi.cctvshoppee.com/api/warehouses/${warehouses[deleteIndex]._id}`);
       enqueueSnackbar('Warehouse deleted successfully!', { variant: 'success' });
       fetchWarehouses();
       handleDeleteConfirmClose();

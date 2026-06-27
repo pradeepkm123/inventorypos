@@ -1912,7 +1912,7 @@ const RawMaterialsInventory = () => {
         return;
       }
       try {
-        let url = 'http://52.66.98.128:5002/api/raw-materials?';
+        let url = 'https://inventoryapi.cctvshoppee.com/api/raw-materials?';
         if (currentUser.userId) {
           url += `userId=${currentUser.userId}`;
         } else if (currentUser.role) {
@@ -1945,7 +1945,7 @@ const RawMaterialsInventory = () => {
       };
 
       const response = await fetch(
-        'http://52.66.98.128:5002/api/raw-materials',
+        'https://inventoryapi.cctvshoppee.com/api/raw-materials',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -1973,7 +1973,7 @@ const RawMaterialsInventory = () => {
       };
 
       const response = await fetch(
-        `http://52.66.98.128:5002/api/raw-materials/${id}`,
+        `https://inventoryapi.cctvshoppee.com/api/raw-materials/${id}`,
         {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
@@ -1996,7 +1996,7 @@ const RawMaterialsInventory = () => {
     }
     try {
       const response = await fetch(
-        `http://52.66.98.128:5002/api/raw-materials/${id}`,
+        `https://inventoryapi.cctvshoppee.com/api/raw-materials/${id}`,
         {
           method: 'DELETE',
           headers: { 'Content-Type': 'application/json' },

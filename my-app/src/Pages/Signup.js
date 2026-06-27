@@ -243,7 +243,7 @@ export default function SignUpDesign() {
     validationSchema: SignUpSchema,
     onSubmit: async (values, { setSubmitting }) => {
       try {
-        const response = await fetch('http://52.66.98.128:5002/api/users/signup', {
+        const response = await fetch('https://inventoryapi.cctvshoppee.com/api/users/signup', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

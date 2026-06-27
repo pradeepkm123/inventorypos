@@ -160,7 +160,7 @@ export function UserProvider({ children }) {
   const API_BASE = useMemo(
     () =>
       process.env.REACT_APP_API_URL ||
-      'http://52.66.98.128:5002/api',
+      'https://inventoryapi.cctvshoppee.com/api',
     []
   );
 

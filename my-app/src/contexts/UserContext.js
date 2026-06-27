@@ -15,7 +15,7 @@ export function UserProvider({ children }) {
       if (token && userData) {
         try {
           // Verify token is still valid by making a test request
-          const response = await fetch('http://52.66.98.128:5002/api/items', {
+          const response = await fetch('https://inventoryapi.cctvshoppee.com/api/items', {
             headers: {
               'Authorization': `Bearer ${token}`,
             },

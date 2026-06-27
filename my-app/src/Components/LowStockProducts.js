@@ -6,7 +6,7 @@ const LowStockProducts = () => {
   useEffect(() => {
     const fetchLowStock = async () => {
       try {
-        const res = await fetch('http://52.66.98.128:5002/api/products');
+        const res = await fetch('https://inventoryapi.cctvshoppee.com/api/products');
         const data = await res.json();
 
         const filtered = data.filter(
@@ -54,7 +54,7 @@ const LowStockProducts = () => {
               }}>
                 {product.productImage ? (
                   <img
-                    src={`http://52.66.98.128:5002/uploads/${product.productImage}`}
+                    src={`https://inventoryapi.cctvshoppee.com/uploads/${product.productImage}`}
                     alt={product.model || 'Product'}
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />

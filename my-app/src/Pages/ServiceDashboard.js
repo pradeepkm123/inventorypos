@@ -400,8 +400,8 @@ import {
   TextField
 } from '@mui/material';
 
-const API_BASE = 'http://52.66.98.128:5002/api';
-const FILE_HOST = 'http://52.66.98.128:5002';
+const API_BASE = 'https://inventoryapi.cctvshoppee.com/api';
+const FILE_HOST = 'https://inventoryapi.cctvshoppee.com';
 
 const ServiceDashboard = () => {
   const { user } = useUser();

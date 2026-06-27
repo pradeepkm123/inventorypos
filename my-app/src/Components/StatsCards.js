@@ -16,10 +16,10 @@ const StatsCards = () => {
     const fetchData = async () => {
       try {
         const [productsRes, inventoryRes, inwardRes, dispatchRes] = await Promise.all([
-          fetch('http://52.66.98.128:5002/api/products'),
-          fetch('http://52.66.98.128:5002/api/inventory/total-value'),
-          fetch('http://52.66.98.128:5002/api/inventory/today-inward'),
-          fetch('http://52.66.98.128:5002/api/dispatch'),
+          fetch('https://inventoryapi.cctvshoppee.com/api/products'),
+          fetch('https://inventoryapi.cctvshoppee.com/api/inventory/total-value'),
+          fetch('https://inventoryapi.cctvshoppee.com/api/inventory/today-inward'),
+          fetch('https://inventoryapi.cctvshoppee.com/api/dispatch'),
         ]);
 
         const productsData = await productsRes.json();

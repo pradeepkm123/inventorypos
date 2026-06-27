@@ -777,7 +777,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Calendar, Edit, Trash2, Upload, Plus, X } from 'lucide-react';
 import { useUser } from './UserContext';
 
-const API_BASE = 'http://52.66.98.128:5002/api';
+const API_BASE = 'https://inventoryapi.cctvshoppee.com/api';
 
 function useWindowWidth() {
   const [w, setW] = useState(() =>

@@ -129,7 +129,14 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 
 // Middlewares
-app.use(cors());
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+}));
+
+app.options(/.*/, cors());
+
 app.use(express.json()); // Replaces deprecated bodyParser.json()
 app.use('/uploads', express.static(uploadDir)); // Serve uploaded images
 
@@ -188,7 +195,14 @@ app.use('/api', serviceRoutes);
 
 app.use('/api/self-transfer', selfTransferRoutes);
 
+// Roles API
+app.get('/api/auth/roles', (req, res) => {
+  res.json(['Admin', 'Sales', 'Store', 'Warehouse', 'Manager']);
+});
 
+app.get('/api/roles', (req, res) => {
+  res.json(['Admin', 'Sales', 'Store', 'Warehouse', 'Manager']);
+});
 
 // Error Handling Middleware
 app.use((err, req, res, next) => {

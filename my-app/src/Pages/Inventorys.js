@@ -446,7 +446,7 @@ import {
 } from '@mui/icons-material';
 import { useSnackbar } from 'notistack';
 
-const API = 'http://52.66.98.128:5002';
+const API = 'https://inventoryapi.cctvshoppee.com';
 
 const Inventory = () => {
   const { enqueueSnackbar } = useSnackbar();

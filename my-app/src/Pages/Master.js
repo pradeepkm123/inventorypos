@@ -492,8 +492,8 @@ import axios from 'axios';
 import Productlist from '../Components/Productlsit';
 import NoProduct from '../assets/img/No-Product.png';
 
-const API_URL = 'http://52.66.98.128:5002/api';
-const FILE_HOST = 'http://52.66.98.128:5002';
+const API_URL = 'https://inventoryapi.cctvshoppee.com/api';
+const FILE_HOST = 'https://inventoryapi.cctvshoppee.com';
 
 // --- safer URL builder
 const getImageUrl = (img) => {

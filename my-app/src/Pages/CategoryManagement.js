@@ -383,7 +383,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 
-const API = 'http://52.66.98.128:5002/api';
+const API = 'https://inventoryapi.cctvshoppee.com/api';
 
 const CategoryManagement = () => {
   const [categories, setCategories] = useState([]);

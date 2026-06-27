@@ -19,9 +19,9 @@ const OverallInformation = () => {
     const fetchCounts = async () => {
       try {
         const [salesRes, customersRes, brandsRes] = await Promise.all([
-          fetch('http://52.66.98.128:5002/api/salesPersons'),
-          fetch('http://52.66.98.128:5002/api/customers'),
-          fetch('http://52.66.98.128:5002/api/brands'),
+          fetch('https://inventoryapi.cctvshoppee.com/api/salesPersons'),
+          fetch('https://inventoryapi.cctvshoppee.com/api/customers'),
+          fetch('https://inventoryapi.cctvshoppee.com/api/brands'),
         ]);
 
         const salesData = await salesRes.json();

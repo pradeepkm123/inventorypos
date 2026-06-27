@@ -6,7 +6,7 @@ const RecentTransactions = () => {
   useEffect(() => {
     const fetchInward = async () => {
       try {
-        const res = await fetch('http://52.66.98.128:5002/api/inventory');
+        const res = await fetch('https://inventoryapi.cctvshoppee.com/api/inventory');
         const data = await res.json();
         const sorted = data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
         setInwardData(sorted.slice(0, 5)); // Latest 5
@@ -50,7 +50,7 @@ const RecentTransactions = () => {
               }}>
                 {item.productImage ? (
                   <img
-                    src={`http://52.66.98.128:5002/uploads/${item.productImage}`}
+                    src={`https://inventoryapi.cctvshoppee.com/uploads/${item.productImage}`}
                     alt={item.modelNo}
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />

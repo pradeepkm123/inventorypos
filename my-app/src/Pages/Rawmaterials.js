@@ -1490,7 +1490,7 @@ const RawMaterialsInventory = () => {
 
   const itemsPerPage = 6;
   const API_BASE_URL =
-    process.env.REACT_APP_API_URL || 'http://52.66.98.128:5002/api';
+    process.env.REACT_APP_API_URL || 'https://inventoryapi.cctvshoppee.com/api';
 
   // ✅ Fetch raw materials from backend
   useEffect(() => {

@@ -1914,7 +1914,7 @@ import { Calendar, Edit, Trash2, Upload, Plus, X } from 'lucide-react';
 import { useUser } from './UserContext';
 
 const API_BASE_URL =
-  process.env.REACT_APP_API_URL || 'http://52.66.98.128:5002/api';
+  process.env.REACT_APP_API_URL || 'https://inventoryapi.cctvshoppee.com/api';
 
 const PackagingInventory = () => {
   const { user } = useUser();

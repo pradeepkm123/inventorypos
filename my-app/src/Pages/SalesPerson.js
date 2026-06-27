@@ -315,7 +315,7 @@ import {
 import { useSnackbar } from 'notistack';
 import axios from 'axios';
 
-const API_BASE = 'http://52.66.98.128:5002/api/salesPersons';
+const API_BASE = 'https://inventoryapi.cctvshoppee.com/api/salesPersons';
 
 const emptyForm = {
   employeeName: '',

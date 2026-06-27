@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://52.66.98.128:5002/api';
+const API_URL = 'https://inventoryapi.cctvshoppee.com/api';
 
 // Brand API calls
 export const fetchBrands = () => axios.get(`${API_URL}/brands`);

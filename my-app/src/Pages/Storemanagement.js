@@ -30,8 +30,8 @@ import { useSnackbar } from 'notistack';
 import axios from 'axios';
 // import Box from '@mui/material/Box';
 
-const FILE_HOST = 'http://52.66.98.128:5002';
-const API_BASE = 'http://52.66.98.128:5002/api';
+const FILE_HOST = 'https://inventoryapi.cctvshoppee.com';
+const API_BASE = 'https://inventoryapi.cctvshoppee.com/api';
 
 // Helper functions
 const makeEmptyLine = () => ({
