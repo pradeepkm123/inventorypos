@@ -7,7 +7,7 @@ import Inventory2Icon from '@mui/icons-material/Inventory2';
 import WarehouseIcon from '@mui/icons-material/Warehouse';
 import WarningAmberIcon from '@mui/icons-material/WarningAmber';
 
-const API = 'https://stockhandle-taxr.onrender.com/api';
+const API = 'http://52.66.98.128:5002/api';
 
 const InventoryDashboard = () => {
   const [selectedStore, setSelectedStore] = useState(null);
@@ -264,7 +264,7 @@ const InventoryDashboard = () => {
       setDispatch(normalized);
 
       // Fetch all stock inward data
-      const stockInwardRes = await fetch(`https://stockhandle.onrender.com/api/store-inward`);
+      const stockInwardRes = await fetch(`http://52.66.98.128:5002/api/store-inward`);
       if (!stockInwardRes.ok) throw new Error(`Failed to fetch stock inward data: ${stockInwardRes.statusText}`);
       const allStockInwardData = await stockInwardRes.json();
 

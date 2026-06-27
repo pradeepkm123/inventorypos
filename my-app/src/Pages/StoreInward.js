@@ -5269,7 +5269,7 @@ import SyncAltIcon from '@mui/icons-material/SyncAlt';
 import AddIcon from '@mui/icons-material/Add';
 import SearchIcon from '@mui/icons-material/Search';
 
-const API_BASE = 'https://stockhandle-taxr.onrender.com/api';
+const API_BASE = 'http://52.66.98.128:5002/api';
 
 const makeEmptyLine = () => ({
   modelNo: '',

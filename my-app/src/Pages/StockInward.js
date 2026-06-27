@@ -824,8 +824,8 @@ import { Cancel as CancelIcon, Save as SaveIcon, Add as AddIcon, Delete as Delet
 import { useSnackbar } from 'notistack';
 import axios from 'axios';
 
-const FILE_HOST = 'https://stockhandle-taxr.onrender.com';
-const API_BASE = 'https://stockhandle-taxr.onrender.com/api';
+const FILE_HOST = 'http://52.66.98.128:5002';
+const API_BASE = 'http://52.66.98.128:5002/api';
 
 const styles = {
   container: {

@@ -575,7 +575,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import SaveIcon from '@mui/icons-material/Save';
 import MoveToInboxIcon from '@mui/icons-material/MoveToInbox';
 
-const API_BASE = 'https://stockhandle-taxr.onrender.com/api';
+const API_BASE = 'http://52.66.98.128:5002/api';
 
 const AlertDialog = ({ open, onClose, title, message, actions }) => {
   return (

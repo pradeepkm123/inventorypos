@@ -539,7 +539,7 @@ import {
 } from '@mui/icons-material';
 import { useSnackbar } from 'notistack';
 
-const API = 'https://stockhandle-taxr.onrender.com';
+const API = 'http://52.66.98.128:5002';
 
 const statusBadgeStyle = (isActive) => ({
   display: 'inline-flex',

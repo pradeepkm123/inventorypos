@@ -610,7 +610,7 @@ import Select from '@mui/material/Select';
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
 
-const API_BASE = "https://stockhandle-taxr.onrender.com/api";
+const API_BASE = "http://52.66.98.128:5002/api";
 
 const ServiceManagementSystem = () => {
   const { user } = useUser();
@@ -891,7 +891,7 @@ const ServiceManagementSystem = () => {
                 <td style={styles.tableCell}>
                   {s.productImage ? (
                     <img
-                      src={`https://stockhandle-taxr.onrender.com/uploads/${s.productImage}`}
+                      src={`http://52.66.98.128:5002/uploads/${s.productImage}`}
                       alt="Product"
                       style={{
                         width: '60px',

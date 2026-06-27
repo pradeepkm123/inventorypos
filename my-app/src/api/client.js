@@ -4,7 +4,7 @@ import axios from 'axios';
 const isVite = typeof import.meta !== 'undefined' && import.meta.env;
 const baseURL =
   (isVite ? import.meta.env?.VITE_API_URL : process.env.REACT_APP_API_URL) ||
-  'http://localhost:5000/api'; // empty -> CRA proxy handles it; else uses env URL
+  'http://52.66.98.128:5002/api'; // empty -> CRA proxy handles it; else uses env URL
 
 const client = axios.create({
   baseURL, // '' + '/api/...' => proxied to 5000 in dev if proxy is set

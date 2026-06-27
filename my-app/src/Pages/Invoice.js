@@ -36,7 +36,7 @@ function Invoice() {
   useEffect(() => {
     const fetchDispatches = async () => {
       try {
-        const response = await axios.get('https://stockhandle-taxr.onrender.com/api/dispatch');
+        const response = await axios.get('http://52.66.98.128:5002/api/dispatch');
         // Sort by dispatchDate, newest first
         const sortedDispatches = response.data.sort((a, b) =>
           new Date(b.dispatchDate) - new Date(a.dispatchDate)
@@ -64,7 +64,7 @@ function Invoice() {
 
   const handleConfirmDelete = async () => {
     try {
-      await axios.delete(`https://stockhandle-taxr.onrender.com/api/dispatch/${selectedId}`);
+      await axios.delete(`http://52.66.98.128:5002/api/dispatch/${selectedId}`);
       setDispatches(dispatches.filter(dispatch => dispatch._id !== selectedId));
     } catch (error) {
       console.error('Error deleting dispatch:', error);

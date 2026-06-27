@@ -347,7 +347,7 @@ import { Edit as EditIcon, Delete as DeleteIcon, Add as AddIcon } from '@mui/ico
 import axios from 'axios';
 import { useUser } from './UserContext';
 
-const API_BASE = 'https://stockhandle-taxr.onrender.com';
+const API_BASE = 'http://52.66.98.128:5002';
 
 const StoreCustomer = () => {
   const { user } = useUser();

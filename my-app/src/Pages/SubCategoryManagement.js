@@ -352,7 +352,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 
-const API_BASE = 'https://stockhandle-taxr.onrender.com';
+const API_BASE = 'http://52.66.98.128:5002';
 
 const SubCategoryManagement = () => {
   const [subCategories, setSubCategories] = useState([]);

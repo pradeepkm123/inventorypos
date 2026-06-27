@@ -333,7 +333,7 @@ import {
 
 import axios from 'axios';
 
-const API_BASE = 'https://stockhandle-taxr.onrender.com/api';
+const API_BASE = 'http://52.66.98.128:5002/api';
 
 const StoreHome = ({ onStoreSelect }) => {
   const { user } = useUser();

@@ -492,8 +492,8 @@ import axios from 'axios';
 import Productlist from '../Components/Productlsit';
 import NoProduct from '../assets/img/No-Product.png';
 
-const API_URL = 'https://stockhandle-taxr.onrender.com/api';
-const FILE_HOST = 'https://stockhandle-taxr.onrender.com';
+const API_URL = 'http://52.66.98.128:5002/api';
+const FILE_HOST = 'http://52.66.98.128:5002';
 
 // --- safer URL builder
 const getImageUrl = (img) => {

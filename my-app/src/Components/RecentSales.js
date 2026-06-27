@@ -8,8 +8,8 @@ const RecentSales = () => {
     const fetchData = async () => {
       try {
         const [dispatchRes, productRes] = await Promise.all([
-          fetch('https://stockhandle.onrender.com/api/dispatch'),
-          fetch('https://stockhandle.onrender.com/api/products')
+          fetch('http://52.66.98.128:5002/api/dispatch'),
+          fetch('http://52.66.98.128:5002/api/products')
         ]);
 
         const dispatchData = await dispatchRes.json();
@@ -52,7 +52,7 @@ const RecentSales = () => {
           sales.map((sale, index) => {
             const productImage = getProductImage(sale.modelNo);
             const imageUrl = productImage
-              ? `https://stockhandle.onrender.com/uploads/${productImage}`
+              ? `http://52.66.98.128:5002/uploads/${productImage}`
               : '/placeholder.png';
 
             return (

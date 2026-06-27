@@ -907,7 +907,7 @@ const Reports = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await fetch('https://stockhandle-taxr.onrender.com/api/categories');
+        const response = await fetch('http://52.66.98.128:5002/api/categories');
         if (!response.ok) throw new Error('Failed categories fetch');
         const data = await response.json();
         setCategories(Array.isArray(data) ? data : []);
@@ -919,7 +919,7 @@ const Reports = () => {
 
     const fetchBrands = async () => {
       try {
-        const response = await fetch('https://stockhandle-taxr.onrender.com/api/brands');
+        const response = await fetch('http://52.66.98.128:5002/api/brands');
         if (!response.ok) throw new Error('Failed brands fetch');
         const data = await response.json();
         setBrands(Array.isArray(data) ? data : []);
@@ -939,8 +939,8 @@ const Reports = () => {
     const fetchData = async () => {
       const endpoint =
         activeTab === 'inward'
-          ? 'https://stockhandle-taxr.onrender.com/api/inventory'
-          : 'https://stockhandle-taxr.onrender.com/api/dispatch';
+          ? 'http://52.66.98.128:5002/api/inventory'
+          : 'http://52.66.98.128:5002/api/dispatch';
 
       try {
         const response = await fetch(endpoint);

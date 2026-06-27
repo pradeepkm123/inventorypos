@@ -16,10 +16,10 @@ const StatsCards = () => {
     const fetchData = async () => {
       try {
         const [productsRes, inventoryRes, inwardRes, dispatchRes] = await Promise.all([
-          fetch('https://stockhandle.onrender.com/api/products'),
-          fetch('https://stockhandle.onrender.com/api/inventory/total-value'),
-          fetch('https://stockhandle.onrender.com/api/inventory/today-inward'),
-          fetch('https://stockhandle.onrender.com/api/dispatch'),
+          fetch('http://52.66.98.128:5002/api/products'),
+          fetch('http://52.66.98.128:5002/api/inventory/total-value'),
+          fetch('http://52.66.98.128:5002/api/inventory/today-inward'),
+          fetch('http://52.66.98.128:5002/api/dispatch'),
         ]);
 
         const productsData = await productsRes.json();

@@ -911,7 +911,7 @@ const SalesInvoice = () => {
 
   const fetchCustomers = async () => {
     try {
-      const response = await axios.get('https://stockhandle-taxr.onrender.com/api/customers');
+      const response = await axios.get('http://52.66.98.128:5002/api/customers');
       setCustomers(response.data);
     } catch (error) {
       console.error('Error fetching customers:', error);
@@ -920,7 +920,7 @@ const SalesInvoice = () => {
 
   const fetchModels = async () => {
     try {
-      const response = await axios.get('https://stockhandle-taxr.onrender.com/api/products');
+      const response = await axios.get('http://52.66.98.128:5002/api/products');
       const uniqueModels = [...new Set(response.data.map(product => product.model))];
       setModels(uniqueModels);
     } catch (error) {
@@ -930,7 +930,7 @@ const SalesInvoice = () => {
 
   const fetchProductDetails = async () => {
     try {
-      const response = await axios.get(`https://stockhandle-taxr.onrender.com/api/products/model/${modelNo}`);
+      const response = await axios.get(`http://52.66.98.128:5002/api/products/model/${modelNo}`);
       setProductDetails(response.data);
     } catch (error) {
       console.error('Error fetching product details:', error);
@@ -1053,7 +1053,7 @@ const SalesInvoice = () => {
         customer: selectedCustomer,
         ...customerDetails,
       };
-      await axios.post('https://stockhandle.onrender.com/api/invoices', invoiceData);
+      await axios.post('http://52.66.98.128:5002/api/invoices', invoiceData);
       alert('Invoice saved successfully');
       handleClear();
     } catch (error) {
